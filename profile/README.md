@@ -1,685 +1,505 @@
-# PKL SST 2025 🚀
+# 🚀 PKL Smartelco 2025
 
 <div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Welcome+to+PKL+Smartelco+2025!;Learn+Git+%26+Collaboration;Build+Amazing+Projects!" alt="Typing SVG" />
+</div>
 
-![PKL SST 2025 Banner](https://via.placeholder.com/1200x300/0d1117/58a6ff?text=PKL+SST+2025+%7C+Innovation+Through+Code)
-
-[![GitHub Organization](https://img.shields.io/badge/GitHub-Organization-181717?style=for-the-badge&logo=github)](https://github.com/pkl-sst-2025)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-[![Contributors](https://img.shields.io/badge/Contributors-50+-green?style=for-the-badge)](https://github.com/orgs/pkl-sst-2025/people)
-[![Projects](https://img.shields.io/badge/Active_Projects-15+-orange?style=for-the-badge)](https://github.com/orgs/pkl-sst-2025/repositories)
-
-**🎓 Program Kerja Lapangan Smartelco Solusi Teknologi 2025**  
-
-
+<div align="center">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/Smartelco-2025-blue?style=for-the-badge" alt="PKL 2025" />
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" alt="Status" />
 </div>
 
 ---
 
-## 📑 Table of Contents
+## 📋 Daftar Isi
 
-
-- [🎯 Development Philosophy](#-development-philosophy)
-- [🚀 Development Approach](#-development-approach)
-- [🏛️ Clean Architecture (Backend - Rust)](#️-clean-architecture-backend---rust)
-- [🎭 MVVM Architecture (Frontend - SolidJS)](#-mvvm-architecture-frontend---solidjs)
-- [📋 Repository Management SOP](#-repository-management-sop)
-- [📊 Project Management SOP](#-project-management-sop)
-- [🔄 Development Workflow SOP](#-development-workflow-sop)
-- [🛠️ Tech Stack](#️-tech-stack)
-
+- [🎯 Tentang PKL Smartelco 2025](#-tentang-pkl-smartelco-2025)
+- [⚡ Quick Start](#-quick-start)
+- [📚 Panduan Git Lengkap](#-panduan-git-lengkap)
+- [🔄 Workflow Tim](#-workflow-tim)
+- [📝 Konvensi Penamaan](#-konvensi-penamaan)
+- [🤝 Kontribusi](#-kontribusi)
+- [👥 Tim Developer](#-tim-developer)
 
 ---
 
-## 🎯 Development Philosophy
+## 🎯 Tentang PKL Smartelco 2025
 
 <div align="center">
-
-| 🧹 Clean Code | 📚 Documentation | 🔄 Continuous Learning |
-|:---:|:---:|:---:|
-| Maintainable & Readable | Comprehensive & Clear | Always Improving |
-
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400" alt="Coding GIF" />
 </div>
 
-### 💎 Core Principles
+Selamat datang di organisasi **PKL Smartelco 2025**! 🎉
 
-#### 🧩 **Clean and Maintainable Code**
-```typescript
-// ✅ Good: Self-documenting code
-const calculateUserEngagementScore = (user: User): number => {
-  return user.activities
-    .filter(activity => activity.isCompleted)
-    .reduce((score, activity) => score + activity.points, 0);
-};
+Repository ini adalah panduan lengkap untuk semua peserta PKL dalam menggunakan Git dan GitHub untuk kolaborasi proyek. Mari kita belajar bersama dan ciptakan proyek-proyek yang luar biasa!
 
-// ❌ Bad: Unclear purpose
-const calc = (u: any) => u.a.filter(x => x.c).reduce((s, x) => s + x.p, 0);
+### 🌟 Tujuan Organisasi
+- 📖 Memberikan panduan Git yang mudah dipahami
+- 🤝 Memfasilitasi kolaborasi tim yang efektif
+- 🚀 Mengembangkan proyek-proyek inovatif
+- 💡 Berbagi pengetahuan dan best practices
+
+---
+
+## ⚡ Quick Start
+
+### 1️⃣ Setup Awal
+
+```bash
+# Clone repository
+git clone https://github.com/PKL-Smartelco-2025/nama-repository.git
+
+# Masuk ke direktori
+cd nama-repository
+
+# Setup identitas Git
+git config --global user.name "Nama Anda"
+git config --global user.email "email@anda.com"
 ```
 
-#### 📖 **Comprehensive Documentation**
-- 📝 **Code Comments**: Explain the "why", not just the "what"
-- 📋 **API Documentation**: Complete endpoint specifications
-- 🗺️ **Architecture Docs**: System design and data flow
-- 🚀 **Setup Guides**: Step-by-step installation instructions
-
----
-
-## 🚀 Development Approach
+### 2️⃣ Alur Kerja Dasar
 
 <div align="center">
-
-### 🎯 Tracer Bullet Development
-
-![Tracer Bullet Flow](https://via.placeholder.com/800x400/1e293b/f1f5f9?text=UI+%E2%86%92+API+%E2%86%92+Service+%E2%86%92+Database)
-
+  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="300" alt="Git Workflow" />
 </div>
 
-#### 📊 Overview
+```bash
+# 1. Pull perubahan terbaru
+git pull origin main
 
-Tracer Bullet Development adalah pendekatan metodologis yang berfokus pada membangun fungsionalitas end-to-end melalui semua layer sistem (dari UI hingga database) dengan fitur minimal awal. Seperti peluru tracer yang membantu penembak memvisualisasikan jalur tembakan, pendekatan ini memungkinkan tim untuk memvalidasi arsitektur sistem sejak awal sambil menetapkan pola pengembangan yang jelas.
+# 2. Buat branch baru
+git checkout -b feature/nama-fitur
 
-#### 🏗️ Key Components
+# 3. Lakukan perubahan dan commit
+git add .
+git commit -m "feat: menambahkan fitur baru"
 
-##### 📐 **Architectural Layers**
+# 4. Push ke repository
+git push origin feature/nama-fitur
 
-**UI Layer (Frontend Interface)** → **Business Logic Layer (Backend Processing)** → **Data Access Layer (Service Integration)** → **Database Layer (Data Storage)**
-
-##### ⚡ **Development Flow**
-
-| Phase | 🎯 Focus | 📋 Deliverables |
-|:---:|:---|:---|
-| **Phase 1** | 🏗️ Minimal Setup | UI + API + Database |
-| **Phase 2** | ✅ Path Validation | End-to-End Testing |
-| **Phase 3** | 📈 Feature Expansion | Incremental Complexity |
-
-#### 🏆 Benefits
-
-<div align="center">
-
-| 🔧 Technical Advantages | 📊 Project Benefits |
-|:---|:---|
-| ✅ Early architectural validation | 🚀 Accelerated prototype development |
-| ✅ Reduced integration risks | 👥 Early stakeholder feedback |
-| ✅ Clear development patterns | 💰 Reduced technical debt |
-| ✅ Performance baseline establishment | 📈 Clearer progress metrics |
-
-</div>
-
----
-
-## 🏛️ Clean Architecture (Backend - Rust)
-
-<div align="center">
-
-![Clean Architecture](https://via.placeholder.com/800x400/1e293b/f1f5f9?text=Clean+Architecture+%7C+Separation+of+Concerns)
-
-</div>
-
-### 📊 Overview
-
-Clean Architecture adalah filosofi desain perangkat lunak yang memisahkan kepentingan ke dalam lapisan yang berbeda, membuat sistem lebih mudah dipelihara, dapat diuji, dan independen dari framework eksternal atau tools. Ini menekankan pemisahan logika bisnis dari mekanisme pengiriman dan database.
-
-### 📂 Directory Structure
-
-```plaintext
-backend-rust/
-├── Cargo.toml               # Main configuration file for the Rust project
-├── Cargo.lock               # Dependency lock file
-├── .env                     # Environment configuration file
-├── README.md                # Project documentation
-└── src/
-    ├── main.rs              # Application entry point
-    ├── lib.rs               # Shared module file (optional)
-    │
-    ├── dtos/                # Data Transfer Objects (interface adapters)
-    │   ├── mod.rs           # Main module for DTOs
-    │   ├── requests/        # Request data (input)
-    │   │   ├── mod.rs       # Main module for request DTOs
-    │   │   ├── user/        # DTOs for user-related features
-    │   │   │   ├── mod.rs
-    │   │   │   ├── create_user_request.rs
-    │   │   │   └── update_user_request.rs
-    │   │   └── project/     # DTOs for project-related features
-    │   │       ├── mod.rs
-    │   │       ├── create_project_request.rs
-    │   │       └── update_project_request.rs
-    │   │
-    │   └── responses/       # Response data (output)
-    │       ├── mod.rs       # Main module for response DTOs
-    │       ├── user/        # DTOs for user responses
-    │       │   ├── mod.rs
-    │       │   ├── user_response.rs
-    │       │   └── user_list_response.rs
-    │       └── common/      # DTOs for common responses
-    │           ├── mod.rs
-    │           ├── api_response.rs
-    │           └── pagination_response.rs
-    │
-    ├── models/              # Domain models/entities (core business logic)
-    │   ├── mod.rs           # Main module for entities
-    │   ├── user.rs
-    │   ├── project.rs
-    │   ├── work_order.rs
-    │   └── common.rs        # Common entities (e.g., statuses, enums)
-    │
-    ├── repositories/        # Repository layer (interface adapters)
-    │   ├── mod.rs           # Main module for repositories
-    │   ├── traits/          # Interfaces for repositories
-    │   │   ├── mod.rs
-    │   │   ├── user_repository.rs
-    │   │   └── project_repository.rs
-    │   │
-    │   └── impls/           # Repository implementations
-    │       ├── mod.rs
-    │       ├── user_repository_impl.rs
-    │       └── project_repository_impl.rs
-    │
-    ├── services/            # Service/UseCase layer (application logic)
-    │   ├── mod.rs           # Main module for services
-    │   ├── traits/          # Interfaces for services
-    │   │   ├── mod.rs
-    │   │   ├── user_service.rs
-    │   │   └── project_service.rs
-    │   │
-    │   └── impls/           # Service implementations
-    │       ├── mod.rs
-    │       ├── user_service_impl.rs
-    │       └── project_service_impl.rs
-    │
-    ├── handlers/            # Handler/Controller layer (interface adapters)
-    │   ├── mod.rs           # Main module for handlers
-    │   ├── user_handler.rs  # Handler for user-related features
-    │   └── project_handler.rs # Handler for project-related features
-    │
-    ├── config/              # Configuration layer (framework and drivers)
-    │   ├── mod.rs           # Main configuration module
-    │   └── app_config.rs    # Application configurations (e.g., DB, API)
-    │
-    ├── middleware/          # Middleware components (framework and drivers)
-    │   ├── mod.rs           # Main module for middleware
-    │   └── auth.rs          # Authentication middleware
-    │
-    └── utils/               # Utilities and helpers (framework and drivers)
-        ├── mod.rs           # Main module for utilities
-        ├── errors.rs        # Error handling utilities
-        └── constants.rs     # Global constants
-```
-
-### 💡 Layer Explanation
-
-- **`dtos/`**: Handles input (requests) and output (responses) data transfer between layers
-- **`models/`**: Represents core business entities and domain objects
-- **`repositories/`**: Abstraction for data access and manipulation, such as database queries
-- **`services/`**: Contains business logic and application rules (use cases)
-- **`handlers/`**: API entry points or interaction interfaces for external clients
-- **`config/`**: Application and infrastructure configurations
-- **`middleware/`**: Cross-cutting concerns like authentication or logging
-- **`utils/`**: Helper functions and utilities for error handling and constants
-
----
-
-## 🎭 MVVM Architecture (Frontend - SolidJS)
-
-<div align="center">
-
-![MVVM Architecture](https://via.placeholder.com/800x400/1e293b/f1f5f9?text=MVVM+Architecture+%7C+Model+View+ViewModel)
-
-</div>
-
-### 📊 Overview
-
-MVVM (Model-View-ViewModel) architecture membagi aplikasi menjadi tiga layer utama: **Model**, **ViewModel**, dan **View**. Pattern ini memfasilitasi pemisahan kepentingan yang bersih, membuat aplikasi lebih mudah dipelihara, dapat diuji, dan dapat diskalakan.
-
-### 🏗️ Layers Overview
-
-1. **Model Layer**:
-   - Merepresentasikan **data layer** dari aplikasi
-   - Bertanggung jawab untuk mendefinisikan logika bisnis, berinteraksi dengan API, dan mengelola state aplikasi independen dari UI
-   - Examples: `UserModel`, `ProjectModel`, `api/userApi.ts`
-
-2. **ViewModel Layer**:
-   - Bertindak sebagai **jembatan antara Model dan View**
-   - Berisi state dan logik yang dikonsumsi oleh View
-   - Memproses data dari Model agar View-friendly
-   - Examples: State management, Custom hooks seperti `useUser`
-
-3. **View Layer**:
-   - Merepresentasikan **UI layer** dari aplikasi
-   - Menampilkan data dari ViewModel dan update otomatis ketika ViewModel state berubah
-   - Example: Components seperti `UserView`
-
-### 📂 Directory Structure
-
-```plaintext
-frontend-solidjs/
-├── public/                      # Static assets
-├── src/                         # Application source code
-│   ├── models/                  # Model layer
-│   │   ├── UserModel.ts         # Represents the user data and logic
-│   │   ├── ProjectModel.ts      # Represents the project data and logic
-│   │   └── api/                 # API layer for network requests
-│   │       ├── apiClient.ts     # HTTP client setup (e.g., Axios)
-│   │       └── userApi.ts       # API calls for user data
-│   │
-│   ├── viewmodels/              # ViewModel layer
-│   │   ├── UserViewModel.ts     # Manages user-related state and logic
-│   │   ├── ProjectViewModel.ts  # Manages project-related state and logic
-│   │   └── hooks/               # Custom hooks to connect View to ViewModel
-│   │       ├── useUser.ts       # Hook for user logic
-│   │       └── useProject.ts    # Hook for project logic
-│   │
-│   ├── views/                   # View layer
-│   │   ├── UserView.tsx         # Displays user data
-│   │   ├── ProjectView.tsx      # Displays project data
-│   │   └── components/          # Reusable UI components
-│   │       ├── Button.tsx       # Example: Button component
-│   │       └── InputField.tsx   # Example: Input field component
-│   │
-│   ├── services/                # Shared services
-│   │   ├── AuthService.ts       # Handles authentication
-│   │   └── LoggerService.ts     # Handles logging
-│   │
-│   ├── store/                   # Centralized state management
-│   │   ├── index.ts             # Store setup using SolidJS's createStore
-│   │   └── slices/              # State slices
-│   │       ├── userSlice.ts     # User-specific state
-│   │       └── projectSlice.ts  # Project-specific state
-│   │
-│   ├── routes/                  # Routing configuration
-│   │   ├── index.tsx            # Defines app routes
-│   │   └── ProtectedRoute.tsx   # Wrapper for protected routes
-│   │
-│   ├── config/                  # Application configuration
-│   │   ├── AppConfig.ts         # Environment variables and global settings
-│   │   └── mod.ts               # Module entry point
-│   │
-│   ├── middleware/              # Middleware utilities
-│   │   └── auth.ts              # Authentication middleware
-│   │
-│   ├── utils/                   # Shared utilities
-│   │   ├── errors.ts            # Error handling utilities
-│   │   ├── constants.ts         # Application-wide constants
-│   │   └── helpers.ts           # Helper functions
-│   │
-│   ├── App.tsx                  # Root component
-│   └── main.tsx                 # Application entry point
-├── .env                         # Environment variables
-├── .gitignore                   # Git ignore file
-├── package.json                 # Node.js dependencies and scripts
-├── tsconfig.json                # TypeScript configuration
-└── vite.config.ts               # Vite configuration
+# 5. Buat Pull Request di GitHub
 ```
 
 ---
 
-## 📋 Repository Management SOP
+## 📚 Panduan Git Lengkap
 
-### 📁 Repository Naming Convention
+### 🔧 **CLONE** - Mengunduh Repository
 
-#### 📝 Format
+<details>
+<summary>📖 Penjelasan & Contoh</summary>
+
+**Clone** digunakan untuk mengunduh repository dari GitHub ke komputer lokal.
+
+```bash
+# Clone dengan HTTPS
+git clone https://github.com/PKL-Smartelco-2025/repository-name.git
+
+# Clone dengan SSH
+git clone git@github.com:PKL-Smartelco-2025/repository-name.git
+
+# Clone ke folder tertentu
+git clone https://github.com/PKL-Smartelco-2025/repository-name.git my-project
 ```
-[product]-[platform]-[component]
-```
-
-#### ✅ Examples
 
 <div align="center">
-
-| ✅ **Good Examples** | ❌ **Bad Examples** |
-|:---|:---|
-| `pkl-be-main` | `pkl-backend-management` |
-| `pkl-fe-web` | `PKL_Frontend` |
-| `pkl-mobile-android` | `pkl` |
-| `ecommerce-api-auth` | `ecommerce_system` |
-
+  <img src="https://docs.github.com/assets/cb-33207/mw-1440/images/help/repository/clone-repo-clone-url-button.webp" width="500" alt="GitHub Clone" />
 </div>
 
-### 📂 Repository Structure
+</details>
 
+### 📤 **PULL** - Mengambil Perubahan Terbaru
+
+<details>
+<summary>📖 Penjelasan & Contoh</summary>
+
+**Pull** digunakan untuk mengambil dan menggabungkan perubahan terbaru dari repository remote.
+
+```bash
+# Pull dari branch main
+git pull origin main
+
+# Pull dari branch tertentu
+git pull origin development
+
+# Pull dengan rebase (lebih bersih)
+git pull --rebase origin main
+
+# Melihat perubahan sebelum pull
+git fetch
+git log HEAD..origin/main --oneline
 ```
-repository/
-├── 📁 .github/
-│   ├── 📁 workflows/       # 🔄 CI/CD workflows
-│   ├── 📁 ISSUE_TEMPLATE/  # 🐛 Issue templates
-│   └── 📁 PR_TEMPLATE/     # 📝 PR templates
-├── 📁 docs/
-│   ├── 📁 api/            # 📚 API documentation
-│   ├── 📁 setup/          # ⚙️ Setup guides
-│   └── 📁 architecture/   # 🏗️ Architecture docs
-├── 📁 src/
-├── 📁 tests/
-└── 📄 README.md
+
+<div align="center">
+  <img src="https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif" width="300" alt="Pull Animation" />
+</div>
+
+**⚠️ Tips Penting:**
+- Selalu pull sebelum mulai coding
+- Resolve conflict jika ada
+- Gunakan `git status` untuk melihat status
+
+</details>
+
+### 💾 **ADD & COMMIT** - Menyimpan Perubahan
+
+<details>
+<summary>📖 Penjelasan & Contoh</summary>
+
+**Add** untuk menambahkan file ke staging area, **Commit** untuk menyimpan perubahan.
+
+```bash
+# Add file tertentu
+git add filename.txt
+
+# Add semua file
+git add .
+
+# Add dengan pattern
+git add *.js
+
+# Commit dengan pesan
+git commit -m "feat: menambahkan login functionality"
+
+# Commit semua perubahan tracked files
+git commit -am "fix: perbaikan bug pada form validation"
+
+# Commit dengan editor untuk pesan panjang
+git commit
 ```
 
-### 📝 Required Documentation
+<div align="center">
+  <img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="300" alt="Commit Animation" />
+</div>
 
-1. **README.md**
-   - Project overview
-   - Setup instructions
-   - Development guide
-   - Testing guide
+**📝 Format Pesan Commit:**
+- `feat:` - fitur baru
+- `fix:` - perbaikan bug
+- `docs:` - dokumentasi
+- `style:` - formatting, semicolon
+- `refactor:` - refactoring code
+- `test:` - menambah testing
+- `chore:` - maintenance
 
-2. **CONTRIBUTING.md**
-   - Contribution guidelines
-   - Code style guide
-   - PR process
+</details>
 
-3. **CHANGELOG.md**
-   - Version history
-   - Feature updates
-   - Bug fixes
+### 🚀 **PUSH** - Mengirim ke Repository
+
+<details>
+<summary>📖 Penjelasan & Contoh</summary>
+
+**Push** digunakan untuk mengirim commit lokal ke repository remote.
+
+```bash
+# Push ke branch main
+git push origin main
+
+# Push branch baru
+git push -u origin feature/new-feature
+
+# Push semua branch
+git push --all
+
+# Force push (hati-hati!)
+git push --force origin main
+
+# Push dengan tags
+git push --tags
+```
+
+<div align="center">
+  <img src="https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif" width="300" alt="Push Animation" />
+</div>
+
+**⚠️ Perhatian:**
+- Pastikan sudah commit sebelum push
+- Hindari force push di branch utama
+- Check branch yang aktif dengan `git branch`
+
+</details>
+
+### 🌿 **BRANCH** - Manajemen Cabang
+
+<details>
+<summary>📖 Penjelasan & Contoh</summary>
+
+**Branch** digunakan untuk membuat cabang pengembangan terpisah.
+
+```bash
+# Lihat semua branch
+git branch
+
+# Lihat branch remote
+git branch -r
+
+# Buat branch baru
+git branch feature/user-auth
+
+# Switch ke branch
+git checkout feature/user-auth
+
+# Buat dan switch sekaligus
+git checkout -b feature/payment-system
+
+# Hapus branch lokal
+git branch -d feature/old-feature
+
+# Hapus branch remote
+git push origin --delete feature/old-feature
+```
+
+<div align="center">
+  <img src="https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg" width="500" alt="Git Branch" />
+</div>
+
+</details>
+
+### 🔄 **MERGE & REBASE** - Menggabungkan Perubahan
+
+<details>
+<summary>📖 Penjelasan & Contoh</summary>
+
+**Merge** dan **Rebase** untuk menggabungkan perubahan dari branch lain.
+
+```bash
+# Merge branch ke main
+git checkout main
+git merge feature/user-auth
+
+# Rebase (alternatif merge)
+git checkout feature/user-auth
+git rebase main
+
+# Interactive rebase
+git rebase -i HEAD~3
+
+# Abort merge/rebase jika ada masalah
+git merge --abort
+git rebase --abort
+```
+
+<div align="center">
+  <img src="https://wac-cdn.atlassian.com/dam/jcr:83323200-3c57-4c29-9b7e-e67e98745427/Branch-1.png" width="500" alt="Git Merge" />
+</div>
+
+</details>
+
+### 📊 **STATUS & LOG** - Melihat Informasi
+
+<details>
+<summary>📖 Penjelasan & Contoh</summary>
+
+Perintah untuk melihat status dan history repository.
+
+```bash
+# Status repository
+git status
+
+# History commit
+git log
+
+# Log dalam satu baris
+git log --oneline
+
+# Log dengan graph
+git log --graph --oneline --all
+
+# Log file tertentu
+git log -- filename.txt
+
+# Perbedaan file
+git diff
+
+# Perbedaan staged files
+git diff --staged
+```
+
+<div align="center">
+  <img src="https://media.giphy.com/media/487L0pNZKONFN01oHO/giphy.gif" width="300" alt="Git Log" />
+</div>
+
+</details>
 
 ---
 
-## 📊 Project Management SOP
-
-### 📊 Project Board Structure
-
-#### Board Columns
+## 🔄 Workflow Tim
 
 <div align="center">
-
-| Column | 📝 Description | 🎯 Purpose |
-|:---|:---|:---|
-| 📥 **Backlog** | Upcoming features, planned improvements | Future planning |
-| 🎯 **Todo** | Current sprint tasks, prioritized items | Ready for development |
-| 💻 **In Progress** | Active development, assigned tasks | Current work |
-| 👀 **In Review** | Code review, QA testing | Quality assurance |
-| ✅ **Done** | Completed tasks, deployed features | Completed work |
-
+  <img src="https://docs.github.com/assets/cb-23923/mw-1440/images/help/pull_requests/pull-request-review-edit-branch.webp" width="600" alt="GitHub Workflow" />
 </div>
 
-#### Task Labels
+### 📋 Alur Kerja Standard
 
-```
-Priority:
-🔴 Critical
-🟡 High
-🟢 Normal
-🔵 Low
-
-Type:
-🚀 Feature
-🐛 Bug
-📚 Documentation
-🛠️ Maintenance
+```mermaid
+graph LR
+    A[📥 Clone/Pull] --> B[🌿 Create Branch]
+    B --> C[💻 Code & Commit]
+    C --> D[🚀 Push Branch]
+    D --> E[🔄 Pull Request]
+    E --> F[👀 Code Review]
+    F --> G[✅ Merge to Main]
+    G --> A
 ```
 
-### Important Notes
+### 🎯 Best Practices
 
-1. Jangan lupa set **Start date** dan **Due date** untuk setiap issue _(field harus bernama Start date dan Due date)_
-2. Tidak bisa set Start date setelah Due date
-3. Tidak bisa set Start date dan Due date dalam hari yang sama (jika butuh satu hari, set Due date ke hari berikutnya)
+<table>
+<tr>
+<td width="50%">
 
-### 🎫 Issue Management
+**✅ DO**
+- Selalu pull sebelum coding
+- Buat branch untuk setiap fitur
+- Commit dengan pesan yang jelas
+- Test sebelum push
+- Buat PR untuk review
 
-#### Issue Title Format
+</td>
+<td width="50%">
 
+**❌ DON'T**
+- Commit langsung ke main
+- Push code yang error
+- Pesan commit tidak jelas
+- Force push tanpa koordinasi
+- Skip code review
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📝 Konvensi Penamaan
+
+### 🌿 Branch Naming
+
+```bash
+feature/nama-fitur        # Fitur baru
+bugfix/nama-bug          # Perbaikan bug
+hotfix/nama-hotfix       # Perbaikan urgent
+docs/nama-dokumentasi    # Update dokumentasi
+refactor/nama-refactor   # Refactoring code
 ```
-[type]: Brief description of the issue
 
-Examples:
-✅ feat: Implement JWT authentication
-✅ fix: Resolve token expiration issue
-✅ docs: Update API endpoints documentation
+### 💬 Commit Messages
 
-❌ Implementation of auth
-❌ Fixed bug
-❌ Updated docs
+```bash
+feat(auth): menambahkan sistem login
+fix(api): perbaikan error handling
+docs(readme): update installation guide
+style(css): perbaikan responsive design
+refactor(utils): optimasi helper functions
+test(unit): menambahkan test untuk user model
 ```
 
-#### Issue Template
+---
+
+## 🤝 Kontribusi
+
+### 🚀 Cara Berkontribusi
+
+1. **Fork** repository ini
+2. **Clone** ke lokal: `git clone https://github.com/username/repo.git`
+3. **Buat branch**: `git checkout -b feature/amazing-feature`
+4. **Commit** perubahan: `git commit -m 'feat: add amazing feature'`
+5. **Push** ke branch: `git push origin feature/amazing-feature`
+6. **Buat Pull Request**
+
+### 📋 Pull Request Template
 
 ```markdown
-### Overview
-[Clear, concise description]
+## 📝 Deskripsi
+Jelaskan perubahan yang dilakukan
 
-### Time Configuration
-time: HH:MM-HH:MM
+## 🔄 Jenis Perubahan
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Breaking change
+- [ ] Documentation update
 
-// Time Available:
-// 1. time: HH:MM-HH:MM       -> Specific time range
-// 2. time: full-day          -> Full day event
-// 3. Not Configuration Time  -> Full day event
-
-### Acceptance Criteria
-- [ ] Specific requirement 1
-- [ ] Specific requirement 2
-- [ ] Specific requirement 3
-
-### Technical Specifications
-Environment:
-- Rust version: [e.g., 1.70.0]
-- Database: [e.g., PostgreSQL 14]
-- Dependencies: [List key dependencies]
-
-### Additional Context
-[Screenshots, diagrams, or additional information]
-```
-
-#### Meeting Issue Template
-
-```markdown
-Title: 📅 Meeting: [Meeting Purpose] - [Team/Project Name]
-
-### Overview
-🎯 Purpose: [Clear meeting objective]
-👥 Attendees: @username1 @username2 @username3
-
-### Time Configuration
-time: HH:MM-HH:MM
-
-### Meeting Agenda
-1. [ ] Opening (5m)
-2. [ ] [Agenda Item 1] (XXm)
-3. [ ] [Agenda Item 2] (XXm)
-4. [ ] Action Items & Next Steps (10m)
-
-### Required Documents
-📎 Pre-Meeting
-- [ ] [Document 1] - [Link/Description]
-- [ ] [Document 2] - [Link/Description]
-
-📊 Meeting Materials
-- [ ] [Presentation/Document to be discussed]
-- [ ] [Additional materials]
-
-### Minutes of Meeting (MoM)
-To be filled during/after meeting:
-- [ ] Key Discussion Points
-- [ ] Decisions Made
-- [ ] Action Items & Assignees
-- [ ] Next Meeting Schedule (if applicable)
-
-### Technical Setup
-💻 Meeting Platform:
-- Platform: [e.g., Google Meet, Zoom]
-- Link: [Meeting Link]
-- Backup: [Alternative platform/contact]
-
-### Additional Context
-- Recording Permission: [Yes/No]
-- Special Notes: [Any additional information]
-```
-
-### 🔄 Pull Request Process
-
-#### PR Naming Convention
-
-```
-[type]: Brief description (#issue-number)
-
-Examples:
-- feat: Add user authentication (#123)
-- fix: Resolve token expiration (#456)
-```
-
-#### PR Template
-
-```markdown
-### 🎯 Purpose
-[Brief description of the changes]
-
-### 🔄 Changes Made
-- Change 1
-- Change 2
-- Change 3
-
-### 🧪 Testing
-- [ ] Unit tests added
-- [ ] Integration tests updated
-- [ ] Manual testing completed
-
-### 📝 Documentation
-- [ ] Code comments updated
-- [ ] API docs updated
-- [ ] README updated if needed
-
-### 🔍 Review Checklist
-- [ ] Code follows style guidelines
-- [ ] No unused imports/variables
-- [ ] Error handling implemented
-- [ ] Logging added where necessary
-
-### 📸 Screenshots (if applicable)
-[Add screenshots here]
-
-Fixes #[issue-number]
+## ✅ Checklist
+- [ ] Code sudah di-test
+- [ ] Documentation sudah di-update
+- [ ] No breaking changes
 ```
 
 ---
 
-## 🔄 Development Workflow SOP
-
-### 🌿 Branch Management
+## 👥 Tim Developer
 
 <div align="center">
-
-![Branch Flow](https://via.placeholder.com/800x400/1e293b/f1f5f9?text=Git+Branch+Flow+%7C+Feature+Branches)
-
+  <img src="https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="300" alt="Team Work" />
 </div>
 
-#### Branch Types
+### 🏆 Contributors
 
-```
-Main Branches:
-- main        # Production code
-- develop     # Development code
-- staging     # Pre-production testing
+<table>
+<tr>
+  <td align="center">
+    <img src="https://github.com/github.png" width="100px;" alt=""/>
+    <br />
+    <sub><b>Nama Developer 1</b></sub>
+    <br />
+    <sub>Project Lead</sub>
+  </td>
+  <td align="center">
+    <img src="https://github.com/github.png" width="100px;" alt=""/>
+    <br />
+    <sub><b>Nama Developer 2</b></sub>
+    <br />
+    <sub>Frontend Developer</sub>
+  </td>
+  <td align="center">
+    <img src="https://github.com/github.png" width="100px;" alt=""/>
+    <br />
+    <sub><b>Nama Developer 3</b></sub>
+    <br />
+    <sub>Backend Developer</sub>
+  </td>
+</tr>
+</table>
 
-Feature Branches:
-- feature/    # New features
-- bugfix/     # Bug fixes found during development or testing
-- hotfix/     # Emergency fixes for production issues
-- release/    # Release preparation (testing, final touches)
-- experiment/ # Experimental ideas or prototypes
-- support/    # Support for legacy systems or specific use cases
-- chore/      # Minor tasks like dependency updates or refactoring
-- docs/       # Documentation improvements or additions
-- test/       # Testing or creating test scenarios
-```
+### 📞 Kontak
 
-#### Branch Naming
-
-```
-[type]/[issue-number]-[brief-description]
-
-Examples:
-✅ feature/123-user-authentication
-✅ bugfix/456-login-error
-✅ hotfix/789-security-patch
-
-❌ new-feature
-❌ fix-bug
-❌ update
-```
-
-### 💬 Commit Guidelines
-
-#### Commit Message Structure
-
-```
-[type]: Brief description #issue-number
-
-[Optional detailed description]
-
-[Optional footer]
-```
-
-#### Commit Types
-
-```
-🚀 feat     : New feature
-🐛 fix      : Bug fix
-📚 docs     : Documentation
-🎨 style    : Formatting
-♻️ refactor : Code restructure
-⚡ perf     : Performance
-🧪 test     : Testing
-🛠️ chore    : Maintenance tasks
-```
-
-#### ✅ Good Examples
-
-```
-🚀 feat: Add user authentication system #123
-[Optional] Implements JWT-based authentication with refresh tokens
-- Add token generation
-- Add token validation
-- Add refresh mechanism
-
-🐛 fix: Resolve token expiration issue fixes #456
-Updates token validation to handle timezone differences
-
-📚 docs: Update API documentation closes #789
-Complete documentation for authentication endpoints
-```
-
-#### Issue Reference Keywords
-
-```
-Closing Issues:
-fixes #123     // Will close issue when merged
-closes #123    // Will close issue when merged
-resolves #123  // Will close issue when merged
-
-Referencing Issues:
-ref #123      // Reference without closing
-see #123      // Reference without closing
-```
+- 📧 Email: pkl.smartelco2025@gmail.com
+- 💬 Discord: [PKL Smartelco 2025](https://discord.gg/pkl-smartelco)
+- 📱 WhatsApp: [Group PKL](https://wa.me/group)
 
 ---
 
-## 🛠️ Tech Stack
+## 🔗 Resource Tambahan
 
 <div align="center">
 
-### Frontend
-![SolidJS](https://img.shields.io/badge/SolidJS-2C4F7C?style=for-the-badge&logo=solid&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-
-### Backend
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![Actix Web](https://img.shields.io/badge/Actix%20Web-000000?style=for-the-badge&logo=rust&logoColor=white)
-
-### Database
-![SurrealDB](https://img.shields.io/badge/SurrealDB-FF00A0?style=for-the-badge&logo=surrealdb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+[![Git Documentation](https://img.shields.io/badge/📖-Git_Docs-f14e32?style=for-the-badge)](https://git-scm.com/doc)
+[![GitHub Guides](https://img.shields.io/badge/📚-GitHub_Guides-black?style=for-the-badge)](https://guides.github.com/)
+[![Atlassian Git](https://img.shields.io/badge/🎓-Git_Tutorial-0052cc?style=for-the-badge)](https://www.atlassian.com/git/tutorials)
 
 </div>
+
+### 📖 Tutorial Recommend
+
+- [Git Handbook](https://guides.github.com/introduction/git-handbook/)
+- [Interactive Git Tutorial](https://learngitbranching.js.org/)
+- [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Oh Shit, Git!](https://ohshitgit.com/) - Solusi masalah Git umum
 
 ---
 
 <div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=500&lines=Happy+Coding!+🚀;Let's+Build+Amazing+Things!+💡;PKL+Smartelco+2025+🌟" alt="Typing SVG" />
+</div>
 
-### 🌟 Made with ❤️ by PKL SST 2025 Team
+<div align="center">
 
-**🚀 Innovating Today, Leading Tomorrow**
+**Made with ❤️ by PKL Smartelco 2025 Team**
 
-![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=pkl-sst-2025.pkl-sst-2025)
-[![GitHub followers](https://img.shields.io/github/followers/pkl-sst-2025?style=social)](https://github.com/pkl-sst-2025)
-
----
+⭐ Star this repo if it's helpful! | 🍴 Fork to contribute | 📢 Share with your team
 
 </div>
+
+---
+ 
